@@ -10,6 +10,8 @@ jobs:
     strategy:
       matrix:
         message: ["Hola", "CodigoFacilito", "Action"]
+        message2: [1,2]
+        runner: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Print message
