@@ -12,15 +12,7 @@ jobs:
 
     steps:
       - name: Working dir
-        run: ls -al
-
-      - name: Action
-        uses: actions/checkout@v4
-        with:
-          hola: 12
-
-      - name: Working dir after actions/checkout
-        run: ls -al
+        run: echo $GITHUB_OUTPUT
 
 
   second_job:
