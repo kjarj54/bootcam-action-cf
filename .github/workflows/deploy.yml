@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Working dir
-        run: echo $GITHUB_OUTPUT
+        run: echo "my_variable=Hola Mundo" >> $GITHUB_OUTPUT
 
 
   second_job:
