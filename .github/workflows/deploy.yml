@@ -20,3 +20,12 @@ jobs:
         with:
           name: test-artifact
           path: test.log
+  
+  second_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar artefacto
+        uses: actions/download-artifact@v4
+        with:
+          name: test-artifact
