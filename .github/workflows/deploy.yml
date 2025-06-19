@@ -16,6 +16,8 @@ jobs:
 
       - name: Action
         uses: actions/checkout@v4
+        with:
+          hola: 12
 
       - name: Working dir after actions/checkout
         run: ls -al
