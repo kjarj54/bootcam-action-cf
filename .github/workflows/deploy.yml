@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Hola mundo
-        run: echo "Hola mundo $CodigoFacilito"
+        run: echo "Hola mundo $NAME"
 
   second_job:
     if: ${{github.ref == 'refs/heads/main'}}
