@@ -1,0 +1,16 @@
+name: Deploy to Server
+
+on: push
+
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        message: ["Hola", "CodigoFacilito", "Action"]
+
+    steps:
+      - name: Print message
+        run: echo "${{ matrix.message }}"
